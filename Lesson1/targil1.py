@@ -1,5 +1,7 @@
-name=input("Enter you name: ")
-age=input("Enter you Age: ")
-mail=input("Enter you mail: ")
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+mail = input("Enter your mail: ")
 
-print("\nFull name: " + name + "\nYour age is: " + str(age) + "\nYour mail: " + mail)
+print("\nFull name: " + name + "\nYour age: " + str(age) + "\nYour mail: " + mail)
+
+print("\nThank you, Good bye! ")

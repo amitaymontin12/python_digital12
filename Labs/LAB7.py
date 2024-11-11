@@ -3,12 +3,12 @@ from random import randint
 from time import sleep
 
 print("--Welcome to our cube game!--\nEach turn cost 3 ILS\n")
-money=int(input("Enter how much money do you have?\n "))
+money=int(input("Enter how many money do you have?\n"))
 turns=(money//3)
 print("You have: " + str(turns) + " turns\nYour change: " + str(money%3) + " ILS\n")
 prize=0
 for i in range(turns):
-    print(" Rolling Cubes for Round Number " + str(i+1) + " :\n---------------------------------")
+    print("Rolling Cubes for Round Number " + str(i+1) + " :\n---------------------------------")
     sleep(3)
     cube1=randint(1,6)
     cube2=randint(1,6)

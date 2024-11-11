@@ -1,4 +1,5 @@
-from time import sleep
+import time
+import sys
 
 while(True):
     choise=input("Menu:\n-----\n1.Insert Number and ** by 3\n2.Insert 4 IPs to a list and print it\n3.Insert 4 Entries to DNS_Dictionary and print it\n4.Check if a String is Polindrom\n")
@@ -33,5 +34,14 @@ while(True):
     else:
         print("Welcome Back!\n")
 
+print("Loading:")
 
-print("\nThank you and bye bye")
+#animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+animation = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
+
+for i in range(len(animation)):
+    time.sleep(0.4)
+    sys.stdout.write("\r" + animation[i % len(animation)])
+    sys.stdout.flush()
+
+print("\n")
